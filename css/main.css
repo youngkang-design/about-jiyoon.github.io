@@ -101,7 +101,10 @@ body{
 .container{
     max-width: 960px;
     margin: 0 auto;
+}
 
+.background{
+    background-color: whitesmoke;
 }
 
 .header{
@@ -126,10 +129,12 @@ body{
 .item {
     text-align: center;
     font-size: 10px;
+    padding-top: 15px;
 }
 
-.item .item-header .item-title {
+.item-header {
     font-size: 15px;
+    margin-top: 15px;
 }
 
 
