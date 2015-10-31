@@ -123,6 +123,16 @@ body{
 
 }
 
+.item {
+    text-align: center;
+    font-size: 10px;
+}
+
+.item .item-header .item-title {
+    font-size: 15px;
+}
+
+
 
 
 
