@@ -94,7 +94,34 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body{
+    font-family: 'Quando', serif;
+}
 
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+.header{
+    margin: 80px 0;
+    font-family: inherit;
+    text-align: center;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.sub-title{
+    font-weight: 400;
+    font-size: 12px;
+    color: #555555;
+    margin-top: 10px;
+
+}
 
 
 
