@@ -94,71 +94,117 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
 body {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", Apple SD Gothic Neo, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4d5256;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    word-break: keep-all;
 }
+
 
 .container {
-    max-width: 960px;
     margin: 0 auto;
+    max-width: 960px;
+    height: 500px;
 }
 
-.background {
-    background-color: whitesmoke;
-}
-
-.header {
-    margin: 80px 0;
-    font-family: inherit;
-    text-align: center;
-}
-
-.weare, .hungry {
-    font-size: 1.4em;
-    font-weight: 700;
-    line-height: 1.2em;
-    letter-spacing: 0.8em;
-}
-
-.still {
-    font-size: 8em;
-    font-family: 'Damion', cursive;
-    line-height: 1em;
-    text-indent: -0.2em;
-}
-
-#title-text {
-    margin: auto;
+.nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    color: white;
-    text-shadow: 1px 1px #2cefff, 2px 2px #2cefff, 3px 3px #2cefff, 4px 4px #ff2c86, 5px 5px #ff2c86, 6px 6px #ff2c86;
+    z-index: 3;
 }
 
-.item {
-    text-align: center;
-    font-size: 10px;
-    padding-top: 15px;
-}
-
-.item-header {
-    font-size: 15px;
-    margin-top: 15px;
-}
-
-.float-item {
+.nav .logo {
     float: left;
-    border: 1px solid black;
-
 }
 
-.flex {
+.nav .menu {
+    float: right;
+}
+
+.nav .menu .menu-item {
+    float: left;
+    position: relative;
+    display: inline-block;
+    padding: 17.5px 20px;
+    border-bottom: 4px solid transparent;
+}
+
+.nav .menu .menu-item:hover {
+    font-weight: bold;
+    border-color: #4c80f1;
+}
+
+.flex .title {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.flex .subtitle {
+    font-size: 2em;
+}
+.cover .container {
+    height: 100%
+}
+
+.cover {
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    background-image: url("../img/img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.cover .flex {
+    text-align: center;
+    height: 100%;
     display: flex;
-    width: 33%
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
 }
+
+.content {
+    top: 500px;
+    position: relative;
+    z-index: 2;
+    padding: 20px 0;
+    background-color: white;
+}
+
+.content .float {
+    float: left;
+    width: 33.3%;
+    height: 300px;
+    padding: 10px;
+    border: 1px #2c5ae9;
+    box-sizing: border-box;
+}
+
+.content .float .item {
+    width: 100%;
+    height: 100%;
+    background-color: #4c80f1;
+}
+
+.content .img {
+    background-image: url("../img/img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -262,9 +308,8 @@ body {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important;
-        /* Black prints faster:
-                                          http://www.sanbeiji.com/archives/953 */
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -286,6 +331,7 @@ body {
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
+
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
@@ -301,6 +347,7 @@ body {
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
+
     thead {
         display: table-header-group;
     }
