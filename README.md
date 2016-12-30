@@ -1,1 +1,0 @@
-# about-jiyoon.github.io
