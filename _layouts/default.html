@@ -1,19 +1,103 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style type="text/css">
+@font-face {font-family: "nkmc_cf";src: url("http://nayekimmovement.org/wp-content/uploads/2016/08/fff-Light.eot");src: url("http://nayekimmovement.org/wp-content/uploads/2016/08/fff-Light.eot#iefix") format("embedded-opentype"),url("http://nayekimmovement.org/wp-content/uploads/2016/07/fff-Light_gdi.woff") format("woff"),url("http://nayekimmovement.org/wp-content/uploads/2016/08/fff-Light.ttf") format("truetype"),url("http://nayekimmovement.org/wp-content/uploads/2016/08/fff-Light.svg#nkmc_cf") format("svg");font-weight: normal;font-style: normal;}
 
-  {% include head.html %}
+body {
+  font-family: "fff-Light", serif;
+  color: #999;
+}
 
+.header {
+  margin-left: 20px;
+  margin-bottom: 150px;
+}
+
+.subject {
+  width: 100px;
+  display: inline-block;
+  margin: 20px;
+  vertical-align: top;  
+}
+
+.subject2 {
+  display: inline-block;
+  margin: 20px;
+  width: 500px;
+}
+
+.contents {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: block;
+}
+
+.sns li {
+  display: inline-block;
+  padding: 0 15px 0 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+a:visited {
+  color: #555;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}</style>
+  </head>
   <body>
+<div class="header">
+  <h1>UI Designer — Jiyoon Kim<br>
+    <a href="">about.jiyoon@gmail.com</a></h1>
+</div>
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+<div class="container">
+<div class="subject">Work Experience</div>
+<div class="subject2">
+  <div class="contents">2013 — designer at <a href=""> Useobab</a></div>
+  <div class="contents">2014 — designer at <a href="">Tastelab</a></div>
+  <div class="contents">2014 ~ 2016  — designer at <a href="">Winevision</a>
+  <ul>
+    <li><a href="">winevision.kr</a></li>
+    <li><a href="">mashija.com</a></li>
+    <li><a href="">korea sommelier of the year</a></li>
+  </ul>
     </div>
+  <div class="contents">2016 — Visual designer at Samsung Design Membership</div>
+  <div class="contents">2016 — UI designer at <a href="">Datable</a></div>
+  </div>
+</div>
 
-    {% include footer.html %}
+<div class="container">
+  <div class="subject">Follow me on</div>
+  <div class="subject2">
+  <ul class="sns">
+    <li><a href="">Facebook</a></li>
+    <li><a href="">Instagram</a></li>
+    <li><a href="">Behance</a></li>
+    <li><a href="">Dribbble</a></li>
+  </ul>
+  </div>
+</div>
 
   </body>
 
