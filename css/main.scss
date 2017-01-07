@@ -58,12 +58,11 @@ body {
 }
 
 .header {
-  margin-left: 20px;
-  margin-bottom: 150px;
+  margin: 20px 20px 150px 0px;
 }
 
 .subject {
-  width: 100px;
+  width: 150px;
   display: inline-block;
   margin: 20px;
   vertical-align: top;  
@@ -113,7 +112,35 @@ a:hover {
 }
 
 .main_container {
-width: 700px;
+width: 780px;
 margin: 0 auto;
 }
 
+@media only screen and (max-width: 800px) {
+	.subject {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.main_container {
+		width: 80%;
+	}
+	.subject {
+		margin: 0 0 20px 0;
+	}
+	.subject2 {
+		width: 80%;
+		margin: 0 0 90px 0;
+	}
+	h1 {
+		font-size: 25px;
+	}
+	.contents {
+		margin-bottom: 5px;
+	}
+
+	.subject, .contents, .sns {
+		font-size: 14px;
+	}
+}
