@@ -5,11 +5,12 @@
 
 @font-face {
 font-family: 'about';
-src: url('about-jiyoon.github.io/fonts/about.eot'); /* IE9 Compat Modes */
-src: url('about-jiyoon.github.io/fonts/about.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-url('about-jiyoon.github.io/fonts/about.woff') format('woff'), /* Modern Browsers */
-url('about-jiyoon.github.io/fonts/about.ttf') format('truetype'), /* Safari, Android, iOS */
-url('about-jiyoon.github.io/fonts/about.svg#svgFontName') format('svg'); /* Legacy iOS */}
+src: url('fonts/about.eot'); /* IE9 Compat Modes */
+src: url('fonts/about.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('fonts/about.woff') format('woff'), /* Modern Browsers */
+url('fonts/about.ttf') format('truetype'), /* Safari, Android, iOS */
+url('fonts/about.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
