@@ -5,15 +5,15 @@
 
 @font-face {
 font-family: 'about';
-src: url('fonts/about.eot'); /* IE9 Compat Modes */
-src: url('fonts/about.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-url('fonts/about.woff') format('woff'), /* Modern Browsers */
-url('fonts/about.ttf') format('truetype'), /* Safari, Android, iOS */
-url('fonts/about.svg#svgFontName') format('svg'); /* Legacy iOS */
+src: url('css/about.eot'); /* IE9 Compat Modes */
+src: url('css/about.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('css/about.woff') format('woff'), /* Modern Browsers */
+url('css/about.ttf') format('truetype'), /* Safari, Android, iOS */
+url('css/about.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "about", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
